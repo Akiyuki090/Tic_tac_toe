@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link com o Css-->
+    <link rel="stylesheet" href="Css/styles.css">
+
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+
+    <h1>Jogo da Velha</h1>
+
+    <div id="botoes">
+        <button id="2-players">2 jogadores</button>
+        <button id="IA-players">IA</button>
+    </div>
+
+    <div id="container" class=""> <!--Css pra esconder os elementos com essa classe-->
+
+        <div class="box" id="block-1"></div> <!--box: estilo em comum, block: bloco uniario -->
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+
+        <div id="score-container">
+            <h2>Pontuação:</h2>
+            <span class="score-box">
+                <span id="X-score">X</span>:
+                <span id="scoreboard-1">0</span>
+            </span>
+            <span class="score-box">
+                <span id="O-score"></span>:
+                <span id="scoreboard-2">0</span>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="hide">
+        <div class="X">X</div>
+        <div class="O"></div>
+    </div>
+
+    <div id="message" class="hide">
+        <p></p>
+    </div>
+
+    <script src="Script/scripts.js"></script>   
+</body>
+
+</html>
